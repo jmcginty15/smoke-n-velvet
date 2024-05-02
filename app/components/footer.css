@@ -1,0 +1,59 @@
+.footerBigContainer {
+  height: fit-content;
+  position: relative;
+}
+
+.footer {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  color: white;
+  height: fit-content;
+  width: 100%;
+  border-top: solid 2px var(--primary-color);
+  font-family: "EB Garamond";
+  margin-top: 8rem;
+  z-index: 1;
+}
+
+.footerContent {
+  position: relative;
+  padding: 2rem;
+  text-align: left;
+  font-size: 20px;
+}
+
+.footerContentRight {
+  text-align: right;
+}
+
+.footerSvg {
+  display: inline-block;
+  fill: var(--primary-color);
+}
+
+.footerSvg:hover {
+  transition: 0.5s;
+  cursor: pointer;
+  fill: var(--secondary-color);
+}
+
+.footerLink {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
+.footerLink:hover {
+  transition: 0.5s;
+  color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.footerVideo {
+  position: absolute;
+  z-index: -5;
+  object-fit: contain;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
