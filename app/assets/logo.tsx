@@ -17,10 +17,10 @@ export default function Logo({ className = "", scale = 0.1 }: LogoProps) {
       <text
         x="25"
         y="50"
-        font-family="Arial"
-        font-weight="100"
-        font-size="48"
-        font-style="normal"
+        fontFamily="Arial"
+        fontWeight="100"
+        fontSize="48"
+        fontStyle="normal"
         fill="white"
       >
         V
@@ -28,10 +28,10 @@ export default function Logo({ className = "", scale = 0.1 }: LogoProps) {
       <text
         x="25"
         y="50"
-        font-family="Arial"
-        font-weight="100"
-        font-size="48"
-        font-style="normal"
+        fontFamily="Arial"
+        fontWeight="100"
+        fontSize="48"
+        fontStyle="normal"
         fill="#927018"
       >
         S

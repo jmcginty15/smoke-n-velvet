@@ -1,5 +1,4 @@
 import { Link } from "@remix-run/react";
-import { RefObject } from "react";
 import Logo from "~/assets/logo";
 
 export default function Navbar(props: {

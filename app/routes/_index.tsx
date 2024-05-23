@@ -1,5 +1,5 @@
 import type { MetaFunction } from "@remix-run/node";
-import { RefObject, useRef } from "react";
+import { useRef } from "react";
 
 import Navbar from "~/components/navbar";
 import Landing from "~/components/landing";

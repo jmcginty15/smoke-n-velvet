@@ -54,6 +54,6 @@
   z-index: -5;
   object-fit: contain;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  left: -15%;
+  width: 50%;
 }

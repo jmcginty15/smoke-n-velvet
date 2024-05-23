@@ -1,7 +1,7 @@
 import smoke from "~/assets/center-smoke.mov";
 import { useLayoutEffect, useRef, useState } from "react";
 
-const email = "smokenvelvet@gmail.com";
+const email = "melissa.h@smokenvelvet.com";
 
 export default function Contact() {
   const [isVisible, setIsVisible] = useState(false);
@@ -26,7 +26,11 @@ export default function Contact() {
         <h3 className="contactSubtitle contactTopSubtitle">
           <span className="contactSubtitleStart">P</span>hone
         </h3>
-        <p className="contactSubtext">(123) 456-7890</p>
+        <p className="contactSubtext">
+          <a className="contactLink" href="tel:5807490398">
+            (580) 749-0398
+          </a>
+        </p>
         <h3 className="contactSubtitle">
           <span className="contactSubtitleStart">E</span>mail
         </h3>
@@ -34,9 +38,6 @@ export default function Contact() {
           <a className="contactLink" href={`mailto:${email}`}>
             {email}
           </a>
-        </p>
-        <p className="contactText">
-          (Or this could be a form that sends you an email)
         </p>
       </div>
       <div className="contactContent">

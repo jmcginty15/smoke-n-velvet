@@ -12,9 +12,31 @@ import {
 
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
+import stylesRoot from "./root.css";
+import stylesNavbar from "~/components/navbar.css";
+import stylesLanding from "~/components/landing.css";
+import stylesAbout from "~/components/about.css";
+import stylesGallery from "~/components/gallery.css";
+import stylesContact from "~/components/contact.css";
+import stylesFooter from "~/components/footer.css";
 
 export const links: LinksFunction = () => [
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  },
+  {
+    rel: "stylesheet",
+    href: "https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
+  },
   { rel: "stylesheet", href: stylesheet },
+  { rel: "stylesheet", href: stylesRoot },
+  { rel: "stylesheet", href: stylesNavbar },
+  { rel: "stylesheet", href: stylesLanding },
+  { rel: "stylesheet", href: stylesAbout },
+  { rel: "stylesheet", href: stylesGallery },
+  { rel: "stylesheet", href: stylesContact },
+  { rel: "stylesheet", href: stylesFooter },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
@@ -31,7 +53,7 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body className="h-full">
+      <body className="h-full" style={{ backgroundColor: "black" }}>
         <Outlet />
         <ScrollRestoration />
         <Scripts />

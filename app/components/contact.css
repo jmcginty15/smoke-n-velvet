@@ -79,7 +79,13 @@
   z-index: 1;
 }
 
+.contactLink {
+  display: inline-block;
+  color: var(--primary-color);
+}
+
 .contactLink:hover {
   transition: 0.5s;
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
 }
