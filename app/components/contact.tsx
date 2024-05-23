@@ -1,5 +1,6 @@
-import smoke from "~/assets/center-smoke.mov";
 import { useLayoutEffect, useRef, useState } from "react";
+
+import smoke from "~/assets/center-smoke.mov";
 
 const email = "melissa.h@smokenvelvet.com";
 
@@ -12,10 +13,11 @@ export default function Contact() {
       entries.forEach((entry) => entry.isIntersecting && setIsVisible(true));
     });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    const current = domRef.current;
+    if (current) {
+      observer.observe(current);
       return () => {
-        if (domRef.current) observer.unobserve(domRef.current);
+        if (current) observer.unobserve(current);
       };
     }
   }, []);

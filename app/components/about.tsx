@@ -1,6 +1,7 @@
-import woman from "~/assets/woman.jpeg";
-import smoke from "~/assets/center-smoke.mov";
 import { useLayoutEffect, useRef, useState } from "react";
+
+import smoke from "~/assets/center-smoke.mov";
+import woman from "~/assets/woman.jpeg";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,10 +12,11 @@ export default function About() {
       entries.forEach((entry) => entry.isIntersecting && setIsVisible(true));
     });
 
-    if (domRef.current) {
-      observer.observe(domRef.current);
+    const current = domRef.current;
+    if (current) {
+      observer.observe(current);
       return () => {
-        if (domRef.current) observer.unobserve(domRef.current);
+        if (current) observer.unobserve(current);
       };
     }
   }, []);
@@ -30,7 +32,7 @@ export default function About() {
       <div className="aboutContent">
         <video src={smoke} autoPlay muted className="aboutVideo" />
         <h2 className={`aboutTitle ${isVisible && "isVisible"}`} ref={domRef}>
-          <span className="aboutTitleStart">H</span>i, I'm{" "}
+          <span className="aboutTitleStart">H</span>i, I&apos;m{" "}
           <span className="aboutTitleStart">M</span>elissa
         </h2>
         <p className="aboutText">

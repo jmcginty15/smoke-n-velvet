@@ -1,4 +1,5 @@
 import { Link } from "@remix-run/react";
+
 import Logo from "~/assets/logo";
 
 export default function Navbar(props: {
@@ -15,7 +16,14 @@ export default function Navbar(props: {
         </Link>
         <nav className="nav">
           {menuLinks.map((link, index: number) => (
-            <span className="navLink" key={link} onClick={() => scrollTo(link)}>
+            <span
+              role="button"
+              tabIndex={index}
+              className="navLink"
+              key={link}
+              onClick={() => scrollTo(link)}
+              onKeyDown={() => scrollTo(link)}
+            >
               {link}
             </span>
           ))}

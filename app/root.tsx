@@ -10,15 +10,16 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-import { getUser } from "~/session.server";
-import stylesheet from "~/tailwind.css";
-import stylesRoot from "./root.css";
-import stylesNavbar from "~/components/navbar.css";
-import stylesLanding from "~/components/landing.css";
 import stylesAbout from "~/components/about.css";
-import stylesGallery from "~/components/gallery.css";
 import stylesContact from "~/components/contact.css";
 import stylesFooter from "~/components/footer.css";
+import stylesGallery from "~/components/gallery.css";
+import stylesLanding from "~/components/landing.css";
+import stylesNavbar from "~/components/navbar.css";
+import { getUser } from "~/session.server";
+import stylesheet from "~/tailwind.css";
+
+import stylesRoot from "./root.css";
 
 export const links: LinksFunction = () => [
   {

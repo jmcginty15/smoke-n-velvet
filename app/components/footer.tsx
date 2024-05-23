@@ -36,7 +36,7 @@ export default function Footer() {
           </a>
         </div>
         <div className="footerContent footerContentRight">
-          © 2024 Smoke 'n Velvet by Melissa H.
+          © 2024 Smoke &apos;n Velvet by Melissa H.
         </div>
       </div>
     </div>

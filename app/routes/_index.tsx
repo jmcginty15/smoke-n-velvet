@@ -1,12 +1,12 @@
 import type { MetaFunction } from "@remix-run/node";
 import { useRef } from "react";
 
-import Navbar from "~/components/navbar";
-import Landing from "~/components/landing";
 import About from "~/components/about";
-import Gallery from "~/components/gallery";
 import Contact from "~/components/contact";
 import Footer from "~/components/footer";
+import Gallery from "~/components/gallery";
+import Landing from "~/components/landing";
+import Navbar from "~/components/navbar";
 
 export const meta: MetaFunction = () => [{ title: "Remix Notes" }];
 
