@@ -5,14 +5,12 @@
   width: 100vw;
   font-family: "EB Garamond";
   font-style: italic;
-  z-index: 1;
 }
 
 .contactContent {
   position: relative;
   padding: var(--header-height) 4rem 4rem 4rem;
   text-align: justify;
-  z-index: -1;
 }
 
 .contactTitle {
@@ -22,7 +20,6 @@
   margin-top: 4rem;
   font-size: 36px;
   white-space: nowrap;
-  z-index: 1;
   opacity: 0;
   visibility: hidden;
   transition: opacity 5s ease-out;
@@ -36,7 +33,6 @@
 
 .contactVideo {
   position: absolute;
-  z-index: 0;
   object-fit: contain;
   top: 0;
   width: calc(100% - 8rem);
@@ -52,7 +48,6 @@
   position: relative;
   font-size: 28px;
   line-height: 1.75;
-  z-index: 1;
   margin: 1rem 0;
 }
 
@@ -77,7 +72,6 @@
 .contactSubtext {
   position: relative;
   font-size: 24px;
-  z-index: 1;
 }
 
 .contactLink {
