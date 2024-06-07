@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 40% 60%;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   border-top: solid 2px var(--primary-color);
   font-family: "EB Garamond";
@@ -55,7 +55,76 @@
 .aboutPhoto {
   background-size: cover;
   background-position: center;
-  width: calc(100% - 8rem);
+  width: calc(100% - 4rem);
   height: calc(100% - 4rem);
-  margin: 4rem 4rem 0 4rem;
+  margin: 4rem 2rem 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    padding: 4rem 10% 0 10%;
+  }
+
+  .about {
+    grid-template-columns: 100%;
+  }
+
+  .aboutPhoto {
+    width: 100%;
+    margin: 4rem 0 0 0;
+    aspect-ratio: 3 / 4;
+  }
+
+  .aboutTitle {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .aboutTitleStart {
+    font-size: 48px;
+  }
+
+  .aboutText {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 300px) {
+  .aboutTitle {
+    font-size: 20px;
+  }
+
+  .aboutTitleStart {
+    font-size: 40px;
+  }
+
+  .aboutText {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (min-height: 1000px) {
+  .about {
+    min-height: 0;
+    height: fit-content;
+    grid-template-columns: 50% 50%;
+  }
+
+  .aboutPhoto {
+    width: calc(100% - 2rem);
+    margin: 4rem 1rem 0 1rem;
+  }
+
+  .aboutTitle {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .aboutTitleStart {
+    font-size: 48px;
+  }
+
+  .aboutText {
+    font-size: 18px;
+  }
 }

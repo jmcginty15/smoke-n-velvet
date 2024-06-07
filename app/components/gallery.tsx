@@ -12,9 +12,9 @@ import photo1 from "~/assets/gallery/jacket-3.jpg";
 // import photo5 from "~/assets/gallery/photo-5.jpeg";
 
 export default function Gallery() {
-//   props: {
-//   scrollTo: (linkName: string) => void;
-// }
+  //   props: {
+  //   scrollTo: (linkName: string) => void;
+  // }
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLHeadingElement>(null);
 

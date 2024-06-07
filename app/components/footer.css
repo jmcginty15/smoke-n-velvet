@@ -57,3 +57,25 @@
   left: -15%;
   width: 50%;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    grid-template-columns: 100%;
+  }
+
+  .footerContent {
+    font-size: 14px;
+    padding: 1rem;
+  }
+
+  .footerVideo {
+    left: -30%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .footerContent {
+    font-size: 10px;
+  }
+}

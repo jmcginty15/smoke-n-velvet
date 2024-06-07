@@ -29,3 +29,34 @@
   color: #927018;
   font-size: 108px;
 }
+
+@media (max-width: 768px) {
+  .title {
+    left: 1rem;
+    bottom: 7rem;
+    font-size: 36px;
+    width: 90%;
+  }
+
+  .subtitle {
+    font-size: 24px;
+  }
+
+  .titleStart {
+    font-size: 81px;
+  }
+}
+
+@media (max-width: 300px) {
+  .title {
+    font-size: 27px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .titleStart {
+    font-size: 60.75px;
+  }
+}
