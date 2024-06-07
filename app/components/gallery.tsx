@@ -1,15 +1,20 @@
 import { useLayoutEffect, useRef, useState } from "react";
 
+// import GalleryOverlay from "./galleryOverlay";
+
 import smoke from "~/assets/center-smoke.mov";
-import photo1 from "~/assets/gallery/photo-1.jpeg";
-import photo2 from "~/assets/gallery/photo-2.jpeg";
-import photo3 from "~/assets/gallery/photo-3.jpeg";
-import photo4 from "~/assets/gallery/photo-4.jpeg";
-import photo6 from "~/assets/gallery/photo-6.jpeg";
-import photo7 from "~/assets/gallery/photo-7.jpeg";
+import photo2 from "~/assets/gallery/jacket-1.jpg";
+import photo3 from "~/assets/gallery/jacket-2.jpg";
+import photo1 from "~/assets/gallery/jacket-3.jpg";
+// import photo4 from "~/assets/gallery/photo-4.jpeg";
+// import photo6 from "~/assets/gallery/photo-6.jpeg";
+// import photo7 from "~/assets/gallery/photo-7.jpeg";
 // import photo5 from "~/assets/gallery/photo-5.jpeg";
 
 export default function Gallery() {
+//   props: {
+//   scrollTo: (linkName: string) => void;
+// }
   const [isVisible, setIsVisible] = useState(false);
   const domRef = useRef<HTMLHeadingElement>(null);
 
@@ -29,6 +34,7 @@ export default function Gallery() {
 
   return (
     <div className="gallery">
+      {/* <GalleryOverlay scrollTo={props.scrollTo} /> */}
       <div className="galleryContent">
         <video src={smoke} autoPlay muted className="galleryVideo" />
         <h2 className={`galleryTitle ${isVisible && "isVisible"}`} ref={domRef}>
@@ -48,34 +54,16 @@ export default function Gallery() {
           alt={"gallery-item-1"}
         />
         <img
-          id="photo7"
-          className="galleryPhoto"
-          src={photo7}
-          alt={"gallery-item-2"}
-        />
-        <img
-          id="photo6"
-          className="galleryPhoto"
-          src={photo6}
-          alt={"gallery-item-3"}
-        />
-        <img
           id="photo2"
           className="galleryPhoto"
           src={photo2}
-          alt={"gallery-item-4"}
+          alt={"gallery-item-2"}
         />
         <img
           id="photo3"
           className="galleryPhoto"
           src={photo3}
-          alt={"gallery-item-5"}
-        />
-        <img
-          id="photo4"
-          className="galleryPhoto"
-          src={photo4}
-          alt={"gallery-item-6"}
+          alt={"gallery-item-3"}
         />
       </div>
     </div>

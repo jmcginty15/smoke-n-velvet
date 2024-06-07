@@ -12,6 +12,7 @@
   width: 100%;
   border-top: solid 2px var(--primary-color);
   font-family: "EB Garamond";
+  font-style: italic;
   margin-top: 8rem;
   z-index: 1;
 }

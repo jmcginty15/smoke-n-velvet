@@ -14,10 +14,13 @@ import stylesAbout from "~/components/about.css";
 import stylesContact from "~/components/contact.css";
 import stylesFooter from "~/components/footer.css";
 import stylesGallery from "~/components/gallery.css";
+import stylesGalleryOverlay from "~/components/galleryOverlay.css";
 import stylesLanding from "~/components/landing.css";
 import stylesNavbar from "~/components/navbar.css";
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
+
+import stylesFA from "../node_modules/font-awesome/css/font-awesome.min.css";
 
 import stylesRoot from "./root.css";
 
@@ -30,12 +33,14 @@ export const links: LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap",
   },
+  { rel: "stylesheet", href: stylesFA },
   { rel: "stylesheet", href: stylesheet },
   { rel: "stylesheet", href: stylesRoot },
   { rel: "stylesheet", href: stylesNavbar },
   { rel: "stylesheet", href: stylesLanding },
   { rel: "stylesheet", href: stylesAbout },
   { rel: "stylesheet", href: stylesGallery },
+  { rel: "stylesheet", href: stylesGalleryOverlay },
   { rel: "stylesheet", href: stylesContact },
   { rel: "stylesheet", href: stylesFooter },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),

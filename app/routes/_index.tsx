@@ -8,7 +8,13 @@ import Gallery from "~/components/gallery";
 import Landing from "~/components/landing";
 import Navbar from "~/components/navbar";
 
-export const meta: MetaFunction = () => [{ title: "Remix Notes" }];
+export const meta: MetaFunction = () => [
+  {
+    title: "Smoke 'n Velvet by Melissa H.",
+    description:
+      "High-quality handcrafted smoking jackets, custom made to order.",
+  },
+];
 
 export default function Index() {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -38,6 +44,7 @@ export default function Index() {
         <About />
       </div>
       <div ref={galleryRef}>
+        {/* <Gallery scrollTo={scrollTo} /> */}
         <Gallery />
       </div>
       <div ref={contactRef}>

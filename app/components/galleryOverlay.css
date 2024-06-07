@@ -1,0 +1,113 @@
+.galleryOverlay {
+  position: absolute;
+  right: 100vw;
+  z-index: 100;
+  width: calc(100vw - 4px);
+  height: calc(100vh - 4px);
+  background-color: black;
+  border: solid 2px white;
+  border-radius: 5px;
+}
+
+.galleryOverlayOpen {
+  animation: overlayOpen 0.5s;
+  animation-timing-function: ease-in-out;
+  right: 0;
+}
+
+.galleryOverlayClose {
+  animation: overlayClose 0.5s;
+  animation-timing-function: ease-in-out;
+  right: 100vw;
+}
+
+.galleryButtonContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: calc(6 * var(--header-height));
+  position: absolute;
+  right: 0;
+  bottom: var(--header-height);
+  transform: translate(50%);
+  background-color: var(--primary-color);
+}
+
+.galleryButton {
+  font-size: 28px;
+  border-top: solid 2px white;
+  border-bottom: solid 2px white;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-color);
+}
+
+.galleryButton:hover {
+  transition: 0.5s;
+  background-color: var(--third-color);
+}
+
+.galleryButtonOpen {
+  border-right: solid 2px white;
+  border-radius: 0 5px 5px 0;
+}
+
+.galleryButtonClose {
+  border-left: solid 2px white;
+  border-radius: 5px 0 0 5px;
+}
+
+.galleryIconStatic {
+  animation: none;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 0;
+  font-size: 32px;
+}
+
+.galleryIconStaticLeft {
+  margin-left: 0;
+  margin-right: 2rem;
+  font-size: 32px;
+}
+
+.galleryIconAnimated {
+  animation: icon infinite;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  font-size: 32px;
+}
+
+@keyframes icon {
+  0% {
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  50% {
+    color: white;
+    margin-left: 2rem;
+    margin-right: 0;
+  }
+  100% {
+    color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@keyframes overlayOpen {
+  from {
+    right: 100vw;
+  }
+  to {
+    right: 0;
+  }
+}
+
+@keyframes overlayClose {
+  from {
+    right: 0;
+  }
+  to {
+    right: 100vw;
+  }
+}

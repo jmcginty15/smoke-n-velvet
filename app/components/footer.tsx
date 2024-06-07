@@ -34,6 +34,15 @@ export default function Footer() {
           >
             JM Web Development LLC
           </a>
+          <a
+            className="footerLink"
+            href="https://www.flaticon.com/free-icons/jacket"
+            title="jacket icons"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Jacket icons created by Talha Dogar - Flaticon
+          </a>
         </div>
         <div className="footerContent footerContentRight">
           © 2024 Smoke &apos;n Velvet by Melissa H.

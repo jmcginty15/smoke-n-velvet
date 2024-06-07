@@ -1,7 +1,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 
 import smoke from "~/assets/center-smoke.mov";
-import woman from "~/assets/woman.jpeg";
+import woman from "~/assets/melissa.jpg";
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false);
