@@ -30,7 +30,7 @@ export default function About() {
         />
       </div>
       <div className="aboutContent">
-        <video src={smoke} autoPlay muted className="aboutVideo" />
+        <video src={smoke} autoPlay muted playsInline className="aboutVideo" />
         <h2 className={`aboutTitle ${isVisible && "isVisible"}`} ref={domRef}>
           <span className="aboutTitleStart">H</span>i, I&apos;m{" "}
           <span className="aboutTitleStart">M</span>elissa

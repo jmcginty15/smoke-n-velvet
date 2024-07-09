@@ -6,10 +6,7 @@ import smoke from "~/assets/center-smoke.mov";
 import photo2 from "~/assets/gallery/jacket-1.jpg";
 import photo3 from "~/assets/gallery/jacket-2.jpg";
 import photo1 from "~/assets/gallery/jacket-3.jpg";
-// import photo4 from "~/assets/gallery/photo-4.jpeg";
-// import photo6 from "~/assets/gallery/photo-6.jpeg";
-// import photo7 from "~/assets/gallery/photo-7.jpeg";
-// import photo5 from "~/assets/gallery/photo-5.jpeg";
+import photo4 from "~/assets/gallery/jacket-4.jpg";
 
 export default function Gallery() {
   //   props: {
@@ -47,6 +44,12 @@ export default function Gallery() {
         </p>
       </div>
       <div className="galleryContent galleryContainer">
+        <img
+          id="photo4"
+          className="galleryPhoto"
+          src={photo4}
+          alt={"gallery-item-4"}
+        />
         <img
           id="photo1"
           className="galleryPhoto"
