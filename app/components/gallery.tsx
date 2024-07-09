@@ -33,7 +33,13 @@ export default function Gallery() {
     <div className="gallery">
       {/* <GalleryOverlay scrollTo={props.scrollTo} /> */}
       <div className="galleryContent">
-        <video src={smoke} autoPlay muted className="galleryVideo" />
+        <video
+          src={smoke}
+          autoPlay
+          muted
+          playsInline
+          className="galleryVideo"
+        />
         <h2 className={`galleryTitle ${isVisible && "isVisible"}`} ref={domRef}>
           <span className="galleryTitleStart">G</span>allery
         </h2>

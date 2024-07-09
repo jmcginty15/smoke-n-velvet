@@ -40,7 +40,13 @@ export default function Contact() {
   return (
     <div className="contact">
       <div className="contactContent contactContentLeft">
-        <video src={smoke} autoPlay muted className="contactVideo" />
+        <video
+          src={smoke}
+          autoPlay
+          muted
+          playsInline
+          className="contactVideo"
+        />
         <h2
           className={`contactTitle ${isVisible && "isVisible"}`}
           ref={domRefLeft}
@@ -71,7 +77,13 @@ export default function Contact() {
         </p>
       </div>
       <div className="contactContent contactContentRight">
-        <video src={smoke} autoPlay muted className="contactVideo" />
+        <video
+          src={smoke}
+          autoPlay
+          muted
+          playsInline
+          className="contactVideo"
+        />
         <h2
           className={`contactTitle ${isVisible && "isVisible"}`}
           ref={domRefRight}

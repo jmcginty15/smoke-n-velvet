@@ -3,7 +3,14 @@ import smoke from "~/assets/bottom-smoke.mov";
 export default function Footer() {
   return (
     <div className="footerBigContainer">
-      <video src={smoke} autoPlay loop muted className="footerVideo" />
+      <video
+        src={smoke}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="footerVideo"
+      />
       <div className="footer">
         <div className="footerContent">
           <p>
