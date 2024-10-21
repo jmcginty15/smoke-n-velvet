@@ -63,8 +63,8 @@ export default function Contact() {
           <span className="contactSubtitleStart">P</span>hone
         </h3>
         <p className="contactSubtext">
-          <a className="contactLink" href="tel:5807490398">
-            (580) 749-0398
+          <a className="contactLink" href="tel:5722049867">
+            (572) 204-9867
           </a>
         </p>
         <h3 className="contactSubtitle">
